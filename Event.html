@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script>
+			function changebg()
+			{
+				document.body.style.backgroundColor="yellow";
+			}
+			function reset()
+			{
+				document.body.style.backgroundColor="pink";
+			}
+			function keypressdemo()
+			{
+				console.log("Typing.....");
+			}
+			function keydowndemo()
+			{
+				console.log("Typing.....");
+			}
+			function keyupdemo()
+			{
+				console.log("Typing.....");
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" placeholder="Enter the Mouse Curser Here" 					onmouseover="changebg()" onmouseout="reset()" />                                         		 		<br><br><input type="text" placeholder="Press the Key & Look at Console Screen"onkeypress="keypressdemo()" onkeydown="keydowndemo			()"onkeyup="keyupdemo()" />
+
+	</body>
+</html>

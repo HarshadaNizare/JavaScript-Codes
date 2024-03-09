@@ -1,0 +1,61 @@
+
+<html>
+	<head>
+		<script>
+			
+			function show()
+			{
+				let uname=document.getElementById				("txtUsername").value;
+				let pass=document.getElementById("txtPassword").value;
+				
+				if(uname === "Admin" && pass === "Admin123")
+				{
+					alert("Welcome Admin");
+				}
+				else
+				{
+					alert("Sorry!!!Invalid Credential");
+				}
+					
+			}
+
+			function promptdemo()
+			{
+				let name=prompt("Enter the Name");
+				if(name==null)
+				{
+					document.write("Please Entre the Name");
+				}
+				else
+				{
+					document.write("Name="+name);
+				}
+			}
+			function confirmdemo()
+			{
+				let choice=confirm("Do you want to Learn Coding");
+				if(choice==true)
+				{	
+					document.write("Welcome to Coding World");
+				}
+				else
+				{
+					document.write("Bye Bye....");
+				}
+			}
+		</script>
+	</head>
+	<body  align="center" bgcolor="#f9f586"/>
+		<form>
+			<h1>Login Page</h1>
+		<br>Username : <input type="text"  id="txtUsername" name="txtUsername" placeholder="Enter the Username"/>
+		<br>Password :  <input type="text" placeholder="Enter strong password " id="txtPassword" name="txtPassword"/>
+
+		<br><br><input type="button" value="Login" onClick="show()"/>
+		<input type ="Reset" />
+
+		<br><br><input type="button" value="Prompt Box" onClick="promptdemo()"/>
+		<br><br><input type="button" value="Confirm Box"onClick="confirmdemo()"/>
+		</form>
+	</body>
+</html>
